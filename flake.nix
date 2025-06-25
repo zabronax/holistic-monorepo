@@ -22,6 +22,9 @@
 
         fullDevShell = pkgs.mkShell {
           packages = with pkgs; [
+            # Project management
+            sops
+            age
           ];
         };
       });
